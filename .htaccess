@@ -1,0 +1,24 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Force www and HTTPS (optional, remove if not needed)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.casachicinterior.in/$1 [L,R=301]
+
+# Remove .html from all URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Redirect old .html URLs to new ones (SEO friendly)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ %1/ [R=301,L]
+
+# Blogs clean URL
+RewriteRule ^blogs/([a-zA-Z0-9-]+)/?$ blogs-$1.html [L]
+
+# Skip rewriting for CSS and JS
+RewriteCond %{REQUEST_URI} \.(css|js|png|jpg|jpeg|gif|ico)$ [NC]
+RewriteRule ^ - [L]
+

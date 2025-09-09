@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaChic - Interior Design & Home Renovation Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+   <!-- Top Bar -->
+     <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="bg-gray-800 text-white py-2 px-4 hidden md:block overflow-hidden relative">
+        <div class="whitespace-nowrap animate-marquee flex space-x-12">
+            <div class="flex space-x-36">
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-phone-alt mr-1"></i> +91 8740990990
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-envelope mr-1"></i> Salescasachic@gmail.com
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-map-marker-alt mr-1"></i> Studio Locator
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-phone-alt mr-1"></i> +91 8740990990
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-envelope mr-1"></i> Salescasachic@gmail.com
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-map-marker-alt mr-1"></i> Studio Locator
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="/index.html" class="text-2xl font-bold text-gray-800">
+                        <img src="/casachic.png" alt="Casa Chic" class="h-10">
+                        <span class="text-xl font-bold">CASA CHIC INTERIOR</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="dropdown relative">
+                        <a href="#servicepage" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Design
+                            Solutions</a>
+                        <div class="dropdown-menu py-2 px-4">
+                            <a href="/modular-interiors.html" class="block py-2 hover:text-orange-500">Modular
+                                Interiors</a>
+                            <a href="/home-interiors.html" class="block py-2 hover:text-orange-500">Home Interiors</a>
+                            <a href="/home-renovation.html" class="block py-2 hover:text-orange-500">Home Renovation</a>
+                            <a href="/commercial-spaces.html" class="block py-2 hover:text-orange-500">Commercial
+                                Spaces</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown relative">
+                        <a href="/Design.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Design
+                            Ideas</a>
+                        <div class="dropdown-menu py-2 px-4">
+                            <a href="/living-room.html" class="block py-2 hover:text-orange-500">Living Room</a>
+                            <a href="/bedroom.html" class="block py-2 hover:text-orange-500">Bedroom</a>
+                            <a href="/kitchen.html" class="block py-2 hover:text-orange-500">Kitchen</a>
+                            <a href="/bathroom.html" class="block py-2 hover:text-orange-500">Bathroom</a>
+                            <a href="/wardrobe.html" class="block py-2 hover:text-orange-500">Wardrobe</a>
+                        </div>
+                    </div>
+
+                    <a href="/blogs.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Blogs</a>
+                    <a href="/projects.html"
+                        class="nav-link text-gray-800 hover:text-orange-500 font-medium">Projects</a>
+                    <a href="/about.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">About Us</a>
+
+                    <a href="/booking.html">
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                            Book Free Consultation
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="px-2 pt-2 pb-4 space-y-2">
+                    <div class="accordion">
+                        <button
+                            class="accordion-btn flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100 rounded">
+                            <span>Design Solutions</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content px-4">
+                            <a href="/modular-interiors.html"
+                                class="block py-2 text-gray-700 hover:text-orange-500">Modular Interiors</a>
+                            <a href="/home-interiors.html" class="block py-2 text-gray-700 hover:text-orange-500">Home
+                                Interiors</a>
+                            <a href="/home-renovation.html" class="block py-2 text-gray-700 hover:text-orange-500">Home
+                                Renovation</a>
+                            <a href="/commercial-spaces.html"
+                                class="block py-2 text-gray-700 hover:text-orange-500">Commercial Spaces</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button
+                            class="accordion-btn flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100 rounded">
+                            <span>Design Ideas</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content px-4">
+                            <a href="/living-room.html" class="block py-2 text-gray-700 hover:text-orange-500">Living
+                                Room</a>
+                            <a href="/bedroom.html" class="block py-2 text-gray-700 hover:text-orange-500">Bedroom</a>
+                            <a href="/kitchen.html" class="block py-2 text-gray-700 hover:text-orange-500">Kitchen</a>
+                            <a href="/bathroom.html" class="block py-2 text-gray-700 hover:text-orange-500">Bathroom</a>
+                            <a href="/wardrobe.html" class="block py-2 text-gray-700 hover:text-orange-500">Wardrobe</a>
+                        </div>
+                    </div>
+
+                    <a href="/blogs.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Blogs</a>
+                    <a href="/projects.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Projects</a>
+                    <a href="/about.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">About Us</a>
+
+                    <a href="/booking.html">
+                        <button
+                            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium mt-2">
+                            Book Free Consultation
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4 text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Beautiful Homes Made For You</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl">India's most trusted home interior design service with
+                    50,000+ happy homes delivered</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="/booking.html">
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium text-lg transition duration-300">
+                            Book Free Consultation
+                        </button>
+                    </a>
+                    <a href="/Design.html">
+                        <button
+                            class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-800 text-white px-8 py-3 rounded-full font-medium text-lg transition duration-300">
+                            Explore Designs
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <div class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://exportcomments.com/resources/content/images/2022/05/google-reviews-1-.png"
+                    alt="Google Reviews" class="h-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Houzz_logo_%282024%29.png" alt="Houzz"
+                    class="h-12">
+                <img src="https://i0.wp.com/kabbizlegal.com/wp-content/uploads/2024/08/GoodFirms-directory.png?fit=810%2C396&ssl=1"
+                    alt="GoodFirms" class="h-12">
+                <img src="https://www.talkwalker.com/hubfs/Website/Logos/marketplace/Trustpilot.png" alt="Trustpilot"
+                    class="h-12">
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Solutions -->
+    <section id="servicepage" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Design Solutions</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <img src="https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg?cs=srgb&dl=pexels-houzlook-3926542.jpg&fm=jpg"
+                        alt="Modular Interiors" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Modular Interiors</h3>
+                        <p class="text-gray-600 mb-4">Customized modular solutions for every room in your home.</p>
+                        <a href="/modular-interiors.html" class="text-orange-500 font-medium hover:underline">Explore
+                            Now</a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg"
+                        alt="Home Interiors" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Home Interiors</h3>
+                        <p class="text-gray-600 mb-4">Complete home interior design solutions from concept to execution.
+                        </p>
+                        <a href="/home-interiors.html" class="text-orange-500 font-medium hover:underline">Explore
+                            Now</a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <img src="https://media.istockphoto.com/id/1384317531/photo/before-and-after-of-man-painting-roller-to-reveal-newly-remodeled-room-with-fresh-light-green.jpg?s=612x612&w=0&k=20&c=wF448uWLu7btrsbZedGiIHqHbeu6KxA-YxZOiTkfcMY="
+                        alt="Home Renovation" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Home Renovation</h3>
+                        <p class="text-gray-600 mb-4">Transform your existing space with our renovation expertise.</p>
+                        <a href="/home-renovation.html" class="text-orange-500 font-medium hover:underline">Explore
+                            Now</a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <img src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?cs=srgb&dl=pexels-pixabay-37347.jpg&fm=jpg"
+                        alt="Commercial Spaces" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Commercial Spaces</h3>
+                        <p class="text-gray-600 mb-4">Design solutions for offices, restaurants, retail and more.</p>
+                        <a href="/commercial-spaces.html" class="text-orange-500 font-medium hover:underline">Explore
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Choose DesignCafe?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                     <a href="/why-choose.html">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-award text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">50,000+ Happy Homes</h3>
+                    <p class="text-gray-600">We've delivered beautiful interiors for over 10,000 homes across India.</p>
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                     <a href="/why-choose.html">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-check text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">45-Day Delivery</h3>
+                    <p class="text-gray-600">Our modular solutions are installed in just 45 days from design approval.
+                    </p>
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                     <a href="/why-choose.html">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">5-Year Warranty</h3>
+                    <p class="text-gray-600">All our products come with a comprehensive 5-year warranty.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Featured Projects</h2>
+                <a href="/projects.html" class="text-orange-500 font-medium hover:underline">View All Projects</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card rounded-lg overflow-hidden shadow-lg transition duration-300 relative group">
+                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?cs=srgb&dl=pexels-jvdm-1457842.jpg&fm=jpg"
+                        alt="Living Room" class="w-full h-80 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-end p-6">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <h3 class="text-xl font-bold mb-2">Modern Living Room</h3>
+                            <p class="mb-4">Bangalore | 450 sq.ft</p>
+                            <a href="/living-room.html">
+                            <button
+                                class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium">
+                                View Project
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card rounded-lg overflow-hidden shadow-lg transition duration-300 relative group">
+                    <img src="https://images.jdmagicbox.com/quickquotes/images_main/pop-theme-l-shaped-modular-kitchen-2217711650-bylsitl8.jpg"
+                        alt="Kitchen" class="w-full h-80 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-end p-6">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <h3 class="text-xl font-bold mb-2">Modular Kitchen</h3>
+                            <p class="mb-4">Mumbai | 300 sq.ft</p>
+                            <a href="/kitchen.html">
+                            <button
+                                class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium">
+                                View Project
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card rounded-lg overflow-hidden shadow-lg transition duration-300 relative group">
+                    <img src="https://images.pexels.com/photos/7535037/pexels-photo-7535037.jpeg?cs=srgb&dl=pexels-heyho-7535037.jpg&fm=jpg"
+                        alt="Bedroom" class="w-full h-80 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-end p-6">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <h3 class="text-xl font-bold mb-2">Luxury Bedroom</h3>
+                            <p class="mb-4">Delhi | 350 sq.ft</p>
+                            <a href="/bedroom.html">
+                            <button
+                                class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium">
+                                View Project
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Design Process</h2>
+
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="process-step flex flex-col items-center mb-8 md:mb-0 relative">
+                    <div
+                        class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4 z-10">
+                        1</div>
+                    <h3 class="text-xl font-bold mb-2">Consultation</h3>
+                    <p class="text-gray-600 text-center max-w-xs">Free consultation with our experts</p>
+
+                </div>
+
+                <div class="process-step flex flex-col items-center mb-8 md:mb-0 relative">
+                    <div
+                        class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4 z-10">
+                        2</div>
+                    <h3 class="text-xl font-bold mb-2">Design</h3>
+                    <p class="text-gray-600 text-center max-w-xs">Customized 3D designs for your space</p>
+
+                </div>
+
+                <div class="process-step flex flex-col items-center mb-8 md:mb-0 relative">
+                    <div
+                        class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4 z-10">
+                        3</div>
+                    <h3 class="text-xl font-bold mb-2">Production</h3>
+                    <p class="text-gray-600 text-center max-w-xs">Precision manufacturing in our factory</p>
+
+                </div>
+
+                <div class="process-step flex flex-col items-center">
+                    <div
+                        class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
+                        4</div>
+                    <h3 class="text-xl font-bold mb-2">Installation</h3>
+                    <p class="text-gray-600 text-center max-w-xs">Professional installation in 45 days</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="/booking.html">
+                <button
+                    class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium text-lg transition duration-300">
+                    Book Free Consultation
+                </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-100 p-8 rounded-lg shadow-md">
+                     <h1 class="font-bold">Review</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl mr-2">★★★★★</div>
+                        <span class="text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">"casachic transformed our 3BHK apartment into a dream home. The team
+                        was professional, creative and delivered on time. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfwzz6JXMKh13ltNWE1JwHPuFDSsbW2swZQQ&s"
+                            alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <p class="text-gray-600">Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-100 p-8 rounded-lg shadow-md">
+                     <h1 class="font-bold">Review</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl mr-2">★★★★★</div>
+                        <span class="text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The modular kitchen they designed is both beautiful and functional.
+                        The quality of materials is excellent and the installation was flawless."</p>
+                    <div class="flex items-center">
+                        <img src="https://plus.unsplash.com/premium_photo-1682089787056-9ac0c78a2ac2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWFuJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                            alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Rahul Mehta</h4>
+                            <p class="text-gray-600">Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-100 p-8 rounded-lg shadow-md">
+                     <h1 class="font-bold">Review</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl mr-2">★★★★★</div>
+                        <span class="text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">"We renovated our entire home with casachic and couldn't be happier.
+                        The designers understood our needs perfectly and delivered beyond expectations."</p>
+                    <div class="flex items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cfRHsYz1yx0ddVgZwn_ry5rI44lR0GcsrQ&s"
+                            alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ananya Reddy</h4>
+                            <p class="text-gray-600">Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities We Serve -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Cities We Serve</h2>
+
+            <div class="marquee overflow-hidden">
+                <div class="marquee-content inline-flex space-x-12">
+                    <div class="city-card bg-white p-6 rounded-lg shadow-md text-center min-w-[200px]">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/1200px-Royal_Challengers_Bengaluru_Logo.svg.png"
+                            alt="Bangalore" class="h-16 mx-auto mb-4">
+                        <h3 class="font-bold">Bangalore</h3>
+                    </div>
+
+                    <div class="city-card bg-white p-6 rounded-lg shadow-md text-center min-w-[200px]">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/800px-Mumbai_Indians_Logo.svg.png"
+                            alt="Mumbai" class="h-16 mx-auto mb-4">
+                        <h3 class="font-bold">Mumbai</h3>
+                    </div>
+
+                    <div class="city-card bg-white p-6 rounded-lg shadow-md text-center min-w-[200px]">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+                            alt="Delhi" class="h-16 mx-auto mb-4">
+                        <h3 class="font-bold">Delhi NCR</h3>
+                    </div>
+
+                    <div class="city-card bg-white p-6 rounded-lg shadow-md text-center min-w-[200px]">
+                        <img src="https://images.seeklogo.com/logo-png/35/1/sunrisers-hyderabad-logo-png_seeklogo-352074.png"
+                            alt="Hyderabad" class="h-16 mx-auto mb-4">
+                        <h3 class="font-bold">Hyderabad</h3>
+                    </div>
+
+                    <div class="city-card bg-white p-6 rounded-lg shadow-md text-center min-w-[200px]">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/800px-Chennai_Super_Kings_Logo.svg.png"
+                            alt="Chennai" class="h-16 mx-auto mb-4">
+                        <h3 class="font-bold">Chennai</h3>
+                    </div>
+
+                    <div class="city-card bg-white p-6 rounded-lg shadow-md text-center min-w-[200px]">
+                        <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/313500/313524.logo.png"
+                            alt="Pune" class="h-16 mx-auto mb-4">
+                        <h3 class="font-bold">Pune</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-orange-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Space?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Book a free consultation with our design experts today.</p>
+            <a href="/booking.html">
+            <button
+                class="bg-white hover:bg-gray-100 text-orange-500 px-8 py-3 rounded-full font-medium text-lg transition duration-300">
+                Book Free Consultation
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Latest From Our Blog</h2>
+                <a href="/blogs.html" class="text-orange-500 font-medium hover:underline">View All Articles</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="blog-card rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/edc080123reddkaihoi-009-645aba4daf6e1.jpg?crop=0.691xw:1.00xh;0.159xw,0&resize=1120:*"
+                        alt="Living Room Ideas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-orange-500">Living Room</span>
+                        <h3 class="text-xl font-bold my-2">Top 5 Bedroom Designs in 2025</h3>
+                        <p class="text-gray-600 mb-4">Discover the latest trends in Bedroom design By Casa Chic
+                            Interior.</p>
+                        <a href="/blog-post-1.html" class="text-orange-500 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://www.snimayhome.com/uploads/image/20200403/16/raffael-kitchen-room.jpg"
+                        alt="Kitchen Ideas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-orange-500">Kitchen</span>
+                        <h3 class="text-xl font-bold my-2">Space-Saving Kitchen Design Ideas</h3>
+                        <p class="text-gray-600 mb-4">Maximize your small kitchen space with these smart solutions.</p>
+                        <a href="/blog-post-2.html" class="text-orange-500 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://www.hindustantimes.com/ht-img/img/2023/03/23/1600x900/spacejoy-vOa-PSimwg4-unsplash_1679559023464_1679559047220_1679559047220.jpg"
+                        alt="Bedroom Colors" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-orange-500">Bedroom</span>
+                        <h3 class="text-xl font-bold my-2">Best Color Schemes for Bedrooms</h3>
+                        <p class="text-gray-600 mb-4">Create the perfect mood with these bedroom color combinations.</p>
+                        <a href="/blog-post-3.html" class="text-orange-500 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="accordion mb-4 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn flex justify-between items-center w-full p-6 text-left">
+                        <span class="text-lg font-medium">How long does the interior design process take?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-gray-600">The design process typically takes 2-3 weeks from initial
+                            consultation to final design approval. This includes site visits, concept development, 3D
+                            visualizations, and material selection. The actual installation of modular interiors takes
+                            just 45 days after design approval.</p>
+                    </div>
+                </div>
+
+                <div class="accordion mb-4 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn flex justify-between items-center w-full p-6 text-left">
+                        <span class="text-lg font-medium">What is included in your home interior packages?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-gray-600">Our home interior packages include complete design solutions for
+                            all rooms - living room, bedroom, kitchen, wardrobes, and bathrooms. This includes space
+                            planning, 3D designs, material selection, manufacturing, installation, and a 5-year warranty
+                            on all products.</p>
+                    </div>
+                </div>
+
+                <div class="accordion mb-4 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn flex justify-between items-center w-full p-6 text-left">
+                        <span class="text-lg font-medium">Do you provide services for renovation projects?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-gray-600">Yes, we specialize in home renovation projects. Our team handles
+                            everything from demolition to new construction, electrical and plumbing work, flooring,
+                            painting, and installing new modular interiors. We provide a complete turnkey solution for
+                            renovation projects.</p>
+                    </div>
+                </div>
+
+                <div class="accordion mb-4 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn flex justify-between items-center w-full p-6 text-left">
+                        <span class="text-lg font-medium">What is the cost of interior design services?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <p class="pb-6 text-gray-600">Our pricing depends on the scope of work, materials selected, and
+                            size of your space. We offer transparent pricing with no hidden costs. On average, our
+                            complete home interior solutions start at ₹2,000 per sq.ft. Book a free consultation to get
+                            an accurate estimate for your project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <img src="/png.png" alt="casachic" class="h-10 mb-6">
+                    <p class="text-gray-400 mb-4">India's most trusted home interior design service with 50,000+ happy
+                        homes delivered.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/people/Casa-Chic-Interiors/61578323402585/?rdid=QOl8bofAt6M6pp3h&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1D5dWwyfbb%2F" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/casa.chic_interior?utm_source=ig_web_button_share_sheet&igsh=MXI5bDBvbHIwaWVlbw==" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Design Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/modular-interiors.html" class="text-gray-400 hover:text-white">Modular Interiors</a></li>
+                        <li><a href="/home-interiors.html" class="text-gray-400 hover:text-white">Home Interiors</a></li>
+                        <li><a href="/home-renovation.html" class="text-gray-400 hover:text-white">Home Renovation</a></li>
+                        <li><a href="/commercial-spaces.html" class="text-gray-400 hover:text-white">Commercial Spaces</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Design Ideas</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/living-room.html" class="text-gray-400 hover:text-white">Living Room</a></li>
+                        <li><a href="/bedroom.html" class="text-gray-400 hover:text-white">Bedroom</a></li>
+                        <li><a href="/kitchen.html" class="text-gray-400 hover:text-white">Kitchen</a></li>
+                        <li><a href="/bathroom.html" class="text-gray-400 hover:text-white">Bathroom</a></li>
+                        <li><a href="/wardrobe.html" class="text-gray-400 hover:text-white">Wardrobe</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-orange-500"></i>
+                            <span class="text-gray-400">+918740990990</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-orange-500"></i>
+                            <span class="text-gray-400">Salescasachic@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-orange-500"></i>
+                            <span class="text-gray-400">Noida</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2025 casachic Interior. All Rights Reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.link/3lf8bz"
+            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition duration-300">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+    
+    
+    <!-- Free Consultation Popup -->
+<div id="consultationModal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+  <div class="bg-white w-full max-w-4xl rounded-lg shadow-xl overflow-hidden md:flex relative">
+    
+    <!-- Left Side Image -->
+    <div class="md:w-1/2 hidden md:block">
+      <img src="https://images.pexels.com/photos/6585760/pexels-photo-6585760.jpeg" alt="Consultation" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Right Side Form -->
+    <div class="w-full md:w-1/2 p-8">
+  <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-600 hover:text-red-500 text-xl">&times;</button>
+  <h2 class="text-2xl font-bold mb-4">Book a Free Consultation</h2>
+  
+  <form method="POST" action="/popup-form.php">
+    <!-- Property Type -->
+    <label class="block mb-2 text-sm font-medium text-gray-700">Property Type</label>
+    <select name="property_type" class="w-full border border-gray-300 rounded px-4 py-2 mb-4" required>
+      <option value="" disabled selected>Select Type</option>
+      <option value="Home">Home</option>
+      <option value="Apartment">Apartment</option>
+      <option value="Commercial">Commercial</option>
+      <option value="Villa">Villa</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <!-- Property Location -->
+    <label class="block mb-2 text-sm font-medium text-gray-700">Property Location</label>
+    <input type="text" name="location" placeholder="e.g. Noida Sector 62" class="w-full border border-gray-300 rounded px-4 py-2 mb-4" required>
+
+    <!-- Name -->
+    <label class="block mb-2 text-sm font-medium text-gray-700">Name</label>
+    <input type="text" name="name" placeholder="Your Name" class="w-full border border-gray-300 rounded px-4 py-2 mb-4" required>
+
+    <!-- Mobile Number -->
+    <label class="block mb-2 text-sm font-medium text-gray-700">Mobile Number</label>
+    <input type="tel" name="mobile" placeholder="10-digit Mobile Number" pattern="[0-9]{10}" oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="10" class="w-full border border-gray-300 rounded px-4 py-2 mb-4" required>
+
+    <!-- Submit -->
+    <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded">Submit</button>
+  </form>
+</div>
+
+
+  <script src="/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!-- blog-post-4.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modular Kitchen Essentials - Casa Chic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/about.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+   <!-- Top Bar -->
+     <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="bg-gray-800 text-white py-2 px-4 hidden md:block overflow-hidden relative">
+        <div class="whitespace-nowrap animate-marquee flex space-x-12">
+            <div class="flex space-x-36">
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-phone-alt mr-1"></i> +91 8740990990
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-envelope mr-1"></i> Salescasachic@gmail.com
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-map-marker-alt mr-1"></i> Studio Locator
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-phone-alt mr-1"></i> +91 8740990990
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-envelope mr-1"></i> Salescasachic@gmail.com
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-map-marker-alt mr-1"></i> Studio Locator
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="/index.html" class="text-2xl font-bold text-gray-800">
+                        <img src="/casachic.png" alt="Casa Chic" class="h-10">
+                        <span class="text-xl font-bold">CASA CHIC INTERIOR</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="dropdown relative">
+                        <a href="#servicepage" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Design
+                            Solutions</a>
+                        <div class="dropdown-menu py-2 px-4">
+                            <a href="/modular-interiors.html" class="block py-2 hover:text-orange-500">Modular
+                                Interiors</a>
+                            <a href="/home-interiors.html" class="block py-2 hover:text-orange-500">Home Interiors</a>
+                            <a href="/home-renovation.html" class="block py-2 hover:text-orange-500">Home Renovation</a>
+                            <a href="/commercial-spaces.html" class="block py-2 hover:text-orange-500">Commercial
+                                Spaces</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown relative">
+                        <a href="/Design.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Design
+                            Ideas</a>
+                        <div class="dropdown-menu py-2 px-4">
+                            <a href="/living-room.html" class="block py-2 hover:text-orange-500">Living Room</a>
+                            <a href="/bedroom.html" class="block py-2 hover:text-orange-500">Bedroom</a>
+                            <a href="/kitchen.html" class="block py-2 hover:text-orange-500">Kitchen</a>
+                            <a href="/bathroom.html" class="block py-2 hover:text-orange-500">Bathroom</a>
+                            <a href="/wardrobe.html" class="block py-2 hover:text-orange-500">Wardrobe</a>
+                        </div>
+                    </div>
+
+                    <a href="/blogs.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Blogs</a>
+                    <a href="/projects.html"
+                        class="nav-link text-gray-800 hover:text-orange-500 font-medium">Projects</a>
+                    <a href="/about.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">About Us</a>
+
+                    <a href="/booking.html">
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                            Book Free Consultation
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="px-2 pt-2 pb-4 space-y-2">
+                    <div class="accordion">
+                        <button
+                            class="accordion-btn flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100 rounded">
+                            <span>Design Solutions</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content px-4">
+                            <a href="/modular-interiors.html"
+                                class="block py-2 text-gray-700 hover:text-orange-500">Modular Interiors</a>
+                            <a href="/home-interiors.html" class="block py-2 text-gray-700 hover:text-orange-500">Home
+                                Interiors</a>
+                            <a href="/home-renovation.html" class="block py-2 text-gray-700 hover:text-orange-500">Home
+                                Renovation</a>
+                            <a href="/commercial-spaces.html"
+                                class="block py-2 text-gray-700 hover:text-orange-500">Commercial Spaces</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button
+                            class="accordion-btn flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100 rounded">
+                            <span>Design Ideas</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content px-4">
+                            <a href="/living-room.html" class="block py-2 text-gray-700 hover:text-orange-500">Living
+                                Room</a>
+                            <a href="/bedroom.html" class="block py-2 text-gray-700 hover:text-orange-500">Bedroom</a>
+                            <a href="/kitchen.html" class="block py-2 text-gray-700 hover:text-orange-500">Kitchen</a>
+                            <a href="/bathroom.html" class="block py-2 text-gray-700 hover:text-orange-500">Bathroom</a>
+                            <a href="/wardrobe.html" class="block py-2 text-gray-700 hover:text-orange-500">Wardrobe</a>
+                        </div>
+                    </div>
+
+                    <a href="/blogs.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Blogs</a>
+                    <a href="/projects.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Projects</a>
+                    <a href="/about.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">About Us</a>
+
+                    <a href="/booking.html">
+                        <button
+                            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium mt-2">
+                            Book Free Consultation
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+        class="bg-[url('https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg')] bg-cover bg-center py-32">
+        <div class="bg-black bg-opacity-60 text-white text-center py-12 px-4">
+            <h1 class="text-4xl font-bold">Modular Kitchen Essentials</h1>
+            <p class="text-lg mt-2">A beginner's guide to choosing the right layout, appliances, and finishes.</p>
+            <p class="text-sm mt-1">By Casa Chic Interior • August 5, 2025</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <main class="container mx-auto px-4 py-16 max-w-3xl space-y-10">
+
+        <!-- Layout -->
+        <div>
+            <h2 class="text-2xl font-bold mb-2 flex items-center">
+                <i class="fa-solid fa-drafting-compass text-orange-500 mr-2"></i> 1. Choosing the Right Layout
+            </h2>
+            <p class="text-gray-700">Popular layouts include L-shape, U-shape, and parallel kitchens. Choose based on
+                your space and cooking habits. Compact spaces work best with straight or L-shaped kitchens, while larger
+                areas can accommodate island counters.</p>
+        </div>
+
+        <!-- Appliances -->
+        <div>
+            <h2 class="text-2xl font-bold mb-2 flex items-center">
+                <i class="fa-solid fa-blender-phone text-orange-500 mr-2"></i> 2. Must-Have Appliances
+            </h2>
+            <p class="text-gray-700">Invest in built-in hobs, chimneys, microwaves, and dishwashers for a seamless look.
+                Energy-efficient and smart appliances make life easier and enhance the kitchen’s modern appeal.</p>
+        </div>
+
+        <!-- Cabinets -->
+        <div>
+            <h2 class="text-2xl font-bold mb-2 flex items-center">
+                <i class="fa-solid fa-box-open text-orange-500 mr-2"></i>
+                3. Modular Cabinets & Storage
+            </h2>
+            <p class="text-gray-700">Pull-out drawers, corner units, and tall cabinets are essentials in any modular
+                setup. Use soft-close hinges and waterproof materials for long-term durability.</p>
+        </div>
+
+        <!-- Finishes -->
+        <div>
+            <h2 class="text-2xl font-bold mb-2 flex items-center">
+                <i class="fa-solid fa-paint-roller text-orange-500 mr-2"></i> 4. Materials & Finishes
+            </h2>
+            <p class="text-gray-700">Laminates, acrylic, glass, and PU finishes are trending. Go for matte textures in
+                bold colors or classic white for a timeless look. Always choose heat- and water-resistant materials.</p>
+        </div>
+
+        <!-- Lighting -->
+        <div>
+            <h2 class="text-2xl font-bold mb-2 flex items-center">
+                <i class="fa-solid fa-lightbulb text-orange-500 mr-2"></i> 5. Lighting & Ventilation
+            </h2>
+            <p class="text-gray-700">Ensure proper task lighting over the cooking and washing areas. Use under-cabinet
+                LED strips and natural ventilation wherever possible for a fresh cooking environment.</p>
+        </div>
+
+        <div class="mt-10">
+            <a href="/blogs.html" class="text-orange-500 hover:underline">&larr; Back to Blog</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">📞 +91 8740990990</p>
+                    <p class="text-gray-400">📧 salescasachic@gmail.com</p>
+                    <p class="text-gray-400">📍 Noida, India</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/projects.html">Projects</a></li>
+                        <li><a href="/booking.html">Book Consultation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="https://www.facebook.com/people/Casa-Chic-Interiors/61578323402585/?rdid=QOl8bofAt6M6pp3h&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1D5dWwyfbb%2F" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/casa.chic_interior?utm_source=ig_web_button_share_sheet&igsh=MXI5bDBvbHIwaWVlbw==" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-400 text-sm">
+                &copy; 2025 Casa Chic Interiors. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!-- modular-interiors.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modular Interiors - Casa Chic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+   <link rel="stylesheet" href="/about.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Top Bar -->
+     <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="bg-gray-800 text-white py-2 px-4 hidden md:block overflow-hidden relative">
+        <div class="whitespace-nowrap animate-marquee flex space-x-12">
+            <div class="flex space-x-36">
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-phone-alt mr-1"></i> +91 8740990990
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-envelope mr-1"></i> Salescasachic@gmail.com
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-map-marker-alt mr-1"></i> Studio Locator
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-phone-alt mr-1"></i> +91 8740990990
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-envelope mr-1"></i> Salescasachic@gmail.com
+                </a>
+                <a href="#" class="text-sm hover:text-orange-500">
+                    <i class="fas fa-map-marker-alt mr-1"></i> Studio Locator
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="/index.html" class="text-2xl font-bold text-gray-800">
+                        <img src="/casachic.png" alt="Casa Chic" class="h-10">
+                        <span class="text-xl font-bold">CASA CHIC INTERIOR</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="dropdown relative">
+                        <a href="#servicepage" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Design
+                            Solutions</a>
+                        <div class="dropdown-menu py-2 px-4">
+                            <a href="/modular-interiors.html" class="block py-2 hover:text-orange-500">Modular
+                                Interiors</a>
+                            <a href="/home-interiors.html" class="block py-2 hover:text-orange-500">Home Interiors</a>
+                            <a href="/home-renovation.html" class="block py-2 hover:text-orange-500">Home Renovation</a>
+                            <a href="/commercial-spaces.html" class="block py-2 hover:text-orange-500">Commercial
+                                Spaces</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown relative">
+                        <a href="/Design.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Design
+                            Ideas</a>
+                        <div class="dropdown-menu py-2 px-4">
+                            <a href="/living-room.html" class="block py-2 hover:text-orange-500">Living Room</a>
+                            <a href="/bedroom.html" class="block py-2 hover:text-orange-500">Bedroom</a>
+                            <a href="/kitchen.html" class="block py-2 hover:text-orange-500">Kitchen</a>
+                            <a href="/bathroom.html" class="block py-2 hover:text-orange-500">Bathroom</a>
+                            <a href="/wardrobe.html" class="block py-2 hover:text-orange-500">Wardrobe</a>
+                        </div>
+                    </div>
+
+                    <a href="/blogs.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">Blogs</a>
+                    <a href="/projects.html"
+                        class="nav-link text-gray-800 hover:text-orange-500 font-medium">Projects</a>
+                    <a href="/about.html" class="nav-link text-gray-800 hover:text-orange-500 font-medium">About Us</a>
+
+                    <a href="/booking.html">
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                            Book Free Consultation
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="px-2 pt-2 pb-4 space-y-2">
+                    <div class="accordion">
+                        <button
+                            class="accordion-btn flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100 rounded">
+                            <span>Design Solutions</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content px-4">
+                            <a href="/modular-interiors.html"
+                                class="block py-2 text-gray-700 hover:text-orange-500">Modular Interiors</a>
+                            <a href="/home-interiors.html" class="block py-2 text-gray-700 hover:text-orange-500">Home
+                                Interiors</a>
+                            <a href="/home-renovation.html" class="block py-2 text-gray-700 hover:text-orange-500">Home
+                                Renovation</a>
+                            <a href="/commercial-spaces.html"
+                                class="block py-2 text-gray-700 hover:text-orange-500">Commercial Spaces</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button
+                            class="accordion-btn flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 hover:bg-gray-100 rounded">
+                            <span>Design Ideas</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content px-4">
+                            <a href="/living-room.html" class="block py-2 text-gray-700 hover:text-orange-500">Living
+                                Room</a>
+                            <a href="/bedroom.html" class="block py-2 text-gray-700 hover:text-orange-500">Bedroom</a>
+                            <a href="/kitchen.html" class="block py-2 text-gray-700 hover:text-orange-500">Kitchen</a>
+                            <a href="/bathroom.html" class="block py-2 text-gray-700 hover:text-orange-500">Bathroom</a>
+                            <a href="/wardrobe.html" class="block py-2 text-gray-700 hover:text-orange-500">Wardrobe</a>
+                        </div>
+                    </div>
+
+                    <a href="/blogs.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Blogs</a>
+                    <a href="/projects.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Projects</a>
+                    <a href="/about.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">About Us</a>
+
+                    <a href="/booking.html">
+                        <button
+                            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium mt-2">
+                            Book Free Consultation
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="bg-[url('https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg')] bg-cover bg-center py-32">
+        <div class="bg-black bg-opacity-50 text-white text-center py-12 px-4">
+            <h1 class="text-4xl font-bold mb-4">Modular Interiors</h1>
+            <p class="text-lg max-w-2xl mx-auto">Smart, stylish and space-saving modular interior solutions for every
+                room in your home.</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            <img src="/Kitchen.webp" alt="Modular Design"
+                class="rounded-lg shadow-md w-full" />
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Smart Designs That Maximize Space</h2>
+                <p class="text-gray-600 mb-4">Our modular interior designs are tailored to your lifestyle and space. We
+                    use precision manufacturing and smart fittings to build kitchens, wardrobes, TV units, and more that
+                    blend functionality with elegance.</p>
+                <p class="text-gray-600 mb-4">From sleek kitchen units to efficient storage solutions, our modular
+                    interiors are crafted using the best quality materials, ensuring durability and style.</p>
+                <a href="/booking.html"
+                    class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium mt-4">Get
+                    a Free Design</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What We Offer</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <i class="fas fa-kitchen-set text-orange-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Modular Kitchens</h3>
+                    <p class="text-gray-600">Custom layouts, premium materials, soft-close fittings, and elegant
+                        finishes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <i class="fas fa-warehouse text-orange-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Wardrobes & Storage</h3>
+                    <p class="text-gray-600">Sliding or hinged doors, internal organizers, lofts, and compact solutions.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <i class="fas fa-tv text-orange-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Entertainment Units</h3>
+                    <p class="text-gray-600">TV consoles, display units, and floating shelves designed for modern homes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-orange-500 text-white text-center py-12">
+        <h2 class="text-3xl font-bold mb-4">Need a Modular Makeover?</h2>
+        <p class="text-lg mb-6">Our experts will design and deliver your dream interiors in just 45 days.</p>
+        <a href="/booking.html"
+            class="bg-white text-orange-500 hover:bg-gray-100 px-6 py-3 rounded-full font-medium">Book a Free
+            Consultation</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">📞 +91 8740990990</p>
+                    <p class="text-gray-400">📧 Salescasachic@gmail.com</p>
+                    <p class="text-gray-400">📍 Noida, India</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/projects.html">Projects</a></li>
+                        <li><a href="/booking.html">Book Consultation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-400 text-sm">
+                &copy; 2025 Casa Chic Interiors. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+
+</html>
