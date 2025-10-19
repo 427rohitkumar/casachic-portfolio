@@ -16,15 +16,37 @@
     <link rel="stylesheet" href="/index.css">
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFW1JPH428"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- customer script  -->
+ <script>
+(function(){
+  // Persistent session
+  let sessionId = localStorage.getItem('sessionId');
+  if (!sessionId) {
+    sessionId = Math.floor(Math.random() * 1000000000).toString();
+    localStorage.setItem('sessionId', sessionId);
+  }
 
-  gtag('config', 'G-DFW1JPH428');
+  const startTime = Date.now();
+
+  window.addEventListener("beforeunload", () => {
+    const duration = Math.floor((Date.now() - startTime) / 1000);
+
+    const payload = {
+      session_id: sessionId,
+      referrer_url: document.referrer || "Direct",
+      page_title: document.title,
+      page_url: window.location.pathname,
+      user_agent: navigator.userAgent,
+      screen_width: window.screen.width,
+      screen_height: window.screen.height,
+      duration_seconds: duration
+    };
+
+    navigator.sendBeacon("http://localhost:3000/api/track", JSON.stringify(payload));
+  });
+})();
 </script>
+
 
 <body>
    <!-- Top Bar -->
@@ -213,11 +235,15 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:px-[2rem]">
                 <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
                     
-                    <div class="relative">
+                    <!-- <div class="relative">
                         <img src="/images/favicon.png"
                             alt="Living Room" class="absolute top-[140px] right-[180px] h-[50px] w-[80px]">
                         <img src="https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg?cs=srgb&dl=pexels-houzlook-3926542.jpg&fm=jpg"
                             alt="Modular Interiors" class="w-full h-64 object-cover">
+                    </div> -->
+                    <div class="relative">
+                        <img src="/images/Bed_room.png"
+                            alt="Modular Interiors" class="w-full h-64 object-cover" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Modular Interiors</h3>
@@ -228,11 +254,15 @@
                 </div>
 
                 <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
-                    <div class="relative">
+                    <!-- <div class="relative">
                         <img src="/images/favicon.png"
                             alt="Living Room" class="absolute top-[140px] right-[210px] h-[50px] w-[80px]">
                         <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg"
                         alt="Home Interiors" class="w-full h-64 object-cover">
+                    </div> -->
+                    <div class="relative">
+                        <img src="/images/Living_room3.png"
+                            alt="Modular Interiors" class="w-full h-64 object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Home Interiors</h3>
@@ -244,11 +274,16 @@
                 </div>
 
                 <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
-                    <div class="relative">
+                    <!-- <div class="relative">
                         <img src="/images/favicon.png"
                             alt="Living Room" class="absolute top-[120px] right-[90px] h-[50px] w-[80px]">
                         <img src="https://media.istockphoto.com/id/1384317531/photo/before-and-after-of-man-painting-roller-to-reveal-newly-remodeled-room-with-fresh-light-green.jpg?s=612x612&w=0&k=20&c=wF448uWLu7btrsbZedGiIHqHbeu6KxA-YxZOiTkfcMY="
                         alt="Home Renovation" class="w-full h-64 object-cover">
+                    </div> -->
+
+                    <div class="relative">
+                        <img src="/images/Bed_room3.png"
+                            alt="Modular Interiors" class="w-full h-64 object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Home Renovation</h3>
@@ -259,11 +294,16 @@
                 </div>
 
                 <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
-                    <div class="relative">
+                    <!-- <div class="relative">
                         <img src="/images/favicon.png"
                             alt="Living Room" class="absolute top-[200px] right-[100px] h-[50px] w-[80px]">
                         <img src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?cs=srgb&dl=pexels-pixabay-37347.jpg&fm=jpg"
                         alt="Commercial Spaces" class="w-full h-64 object-cover">
+                    </div> -->
+
+                    <div class="relative">
+                        <img src="/images/Bed_room2.png"
+                            alt="Modular Interiors" class="w-full h-64 object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Commercial Spaces</h3>
@@ -326,10 +366,12 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="project-card rounded-lg overflow-hidden shadow-lg transition duration-300 relative group">
-                    <img src="/images/favicon.png"
+                    <!-- <img src="/images/favicon.png"
                         alt="Living Room" class="absolute top-[120px] right-[150px] lg:right-[350px] h-[50px] w-[80px]">
                     <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?cs=srgb&dl=pexels-jvdm-1457842.jpg&fm=jpg"
-                        alt="Living Room" class="w-full h-80 object-cover">
+                        alt="Living Room" class="w-full h-80 object-cover"> -->
+                    <img src="/images/Leaving_room2.png"
+                        alt="Living Room" class="w-full h-80 object-cover"> 
                     <div
                         class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-end p-6">
                         <div class="text-white opacity-0 group-hover:opacity-100 transition duration-300">
@@ -346,11 +388,13 @@
                 </div>
 
                 <div class="project-card rounded-lg overflow-hidden shadow-lg transition duration-300 relative group">
-                    <img src="/images/favicon.png"
+                    <!-- <img src="/images/favicon.png"
                         alt="Living Room" class="absolute top-[130px] right-[210px] h-[60px] w-[90px]">
 
                     <img src="https://images.jdmagicbox.com/quickquotes/images_main/pop-theme-l-shaped-modular-kitchen-2217711650-bylsitl8.jpg"
-                        alt="Kitchen" class="w-full h-80 object-cover">
+                        alt="Kitchen" class="w-full h-80 object-cover"> -->
+                    <img src="/images/Kitchen.png"
+                        alt="Living Room" class="w-full h-80 object-cover"> 
                     <div
                         class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-end p-6">
                         <div class="text-white opacity-0 group-hover:opacity-100 transition duration-300">
@@ -367,11 +411,14 @@
                 </div>
 
                 <div class="project-card rounded-lg overflow-hidden shadow-lg transition duration-300 relative group">
-                   <img src="/images/favicon.png"
+                   <!-- <img src="/images/favicon.png"
                         alt="Living Room" class="absolute top-[90px] right-[150px] h-[60px] w-[90px]">
 
                     <img src="https://images.pexels.com/photos/7535037/pexels-photo-7535037.jpeg?cs=srgb&dl=pexels-heyho-7535037.jpg&fm=jpg"
-                        alt="Bedroom" class="w-full h-80 object-cover">
+                        alt="Bedroom" class="w-full h-80 object-cover"> -->
+
+                    <img src="/images/Bed_room2.png"
+                        alt="Living Room" class="w-full h-80 object-cover"> 
                     <div
                         class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-end p-6">
                         <div class="text-white opacity-0 group-hover:opacity-100 transition duration-300">
@@ -577,7 +624,9 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="blog-card rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/edc080123reddkaihoi-009-645aba4daf6e1.jpg?crop=0.691xw:1.00xh;0.159xw,0&resize=1120:*"
+                    <!-- <img src="https://hips.hearstapps.com/hmg-prod/images/edc080123reddkaihoi-009-645aba4daf6e1.jpg?crop=0.691xw:1.00xh;0.159xw,0&resize=1120:*"
+                        alt="Living Room Ideas" class="w-full h-48 object-cover"> -->
+                    <img src="/images/Living_room3.png"
                         alt="Living Room Ideas" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="text-sm text-orange-500">Living Room</span>
@@ -589,7 +638,9 @@
                 </div>
 
                 <div class="blog-card rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://www.snimayhome.com/uploads/image/20200403/16/raffael-kitchen-room.jpg"
+                    <!-- <img src="https://www.snimayhome.com/uploads/image/20200403/16/raffael-kitchen-room.jpg"
+                        alt="Kitchen Ideas" class="w-full h-48 object-cover"> -->
+                    <img src="/images/Kitchen.png"
                         alt="Kitchen Ideas" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="text-sm text-orange-500">Kitchen</span>
@@ -600,7 +651,9 @@
                 </div>
 
                 <div class="blog-card rounded-lg overflow-hidden shadow-lg">
-                    <img src="https://www.hindustantimes.com/ht-img/img/2023/03/23/1600x900/spacejoy-vOa-PSimwg4-unsplash_1679559023464_1679559047220_1679559047220.jpg"
+                    <!-- <img src="https://www.hindustantimes.com/ht-img/img/2023/03/23/1600x900/spacejoy-vOa-PSimwg4-unsplash_1679559023464_1679559047220_1679559047220.jpg"
+                        alt="Bedroom Colors" class="w-full h-48 object-cover"> -->
+                    <img src="/images/Bed_room3.png"
                         alt="Bedroom Colors" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="text-sm text-orange-500">Bedroom</span>
@@ -756,7 +809,8 @@
     
     <!-- Left Side Image -->
     <div class="md:w-1/2 hidden md:block">
-      <img src="https://images.pexels.com/photos/6585760/pexels-photo-6585760.jpeg" alt="Consultation" class="w-full h-full object-cover">
+      <!-- <img src="https://images.pexels.com/photos/6585760/pexels-photo-6585760.jpeg" alt="Consultation" class="w-full h-full object-cover"> -->
+      <img src="/images/Living_room1.jpg" alt="Consultation" class="w-full h-full object-cover">
     </div>
 
     <!-- Right Side Form -->
